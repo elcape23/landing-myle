@@ -1,0 +1,359 @@
+@import "base/variables";
+@import "base/lista";
+@import "nosotros/contenedor-nosotros";
+
+/*Contenido principal Nosotros*/
+.contenidoPrincipalNosotros{
+    grid-area: ppalNos;
+    /*Cartas de versión mobile*/
+    .participantesMobile{
+        display: none;
+    }
+    /*Titulos*/
+    .nosotrosTitulos{
+        position: absolute;
+        margin-left: 70vw;
+        margin-top: 50vh;
+        /*Título secundario - Nuestro*/
+        h3{
+            font-weight: $grosor-n3;
+            font-size: $fuente-n4;
+            align-self: end;
+            animation-name: colorTexto;
+            animation-duration: $duracion-por-defecto;
+        }
+        /*Título principal - Equipo*/
+        h1{
+            font-size: $fuente-n7;
+            font-weight: $grosor-n4;
+            align-self: start;
+            animation-name: colorTexto;
+            animation-duration: $duracion-por-defecto;
+        }
+    }
+
+    /*Cartas Mobile*/    
+    .soliMobile{
+        display: none;
+    }
+    .beluMobile{
+        display: none;
+    }
+    .jlMobile{
+        display: none;
+    }
+    .jjMobile{
+        display: none;
+    }
+
+    /*PopUps*/
+    .cartaSoli{
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        &:target{
+            background-color: rgba(0, 0, 0, 0.5);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .cartaBelu{
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        &:target{
+            background-color: rgba(0, 0, 0, 0.5);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .cartaJl{
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        &:target{
+            background-color: rgba(0, 0, 0, 0.5);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .cartaJj{
+        z-index: 2;
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        &:target{
+            background-color: rgba(0, 0, 0, 0.5);
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .popup{
+        width: 100%;
+        max-width: 50vw;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        background-color: nth($colores, 2);
+        .img{
+            img{
+                height: 100%;
+            }
+        }
+        .container-text{
+            padding: 5vh;
+            overflow-y: auto;
+            h4{
+                font-size: $fuente-n3-medio;
+            }
+            p{
+                font-size: $fuente-n3-medio;
+                font-style: italic;
+                margin-top: 5vh;
+                opacity: $opacidad-por-defecto;
+            }
+        }
+        .btn-close-popup{
+            right: 0;
+            padding: 20px;
+            position: absolute;
+            background-color: nth($colores, 1);
+            color: nth($colores, 2);
+            line-height: 10px;
+            text-decoration: none;
+            font-weight: $grosor-n3;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    /*Contenido principal Nosotros*/
+    .contenidoPrincipalNosotros{
+        grid-area: ppalNos;
+        display: grid;
+        grid-template-areas: "soli soli"
+                             "belu belu"
+                             "jl jl"
+                             "jj jj";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 105vh 90vh 90vh 90vh;
+        /*Titulos*/
+        .nosotrosTitulos{
+            position: absolute;
+            margin-left: 0;
+            margin-top: 50vh;
+            /*Título secundario - Nuestro*/
+            h3{
+                font-weight: $grosor-n3;
+                font-size: $fuente-n4;
+                align-self: end;
+                animation-name: colorTexto;
+                animation-duration: $duracion-por-defecto;
+            }
+            /*Título principal - Equipo*/
+            h1{
+                font-size: $fuente-n7;
+                font-weight: $grosor-n4;
+                align-self: start;
+                animation-name: colorTexto;
+                animation-duration: $duracion-por-defecto;
+            }
+        }
+        .soliMobile{
+            display: block;
+            grid-area: soli;
+            width: 100%;
+            justify-self: center;
+            margin-top: 18vh;
+            .fotoMobile{
+                img{
+                    width: 100%;
+                }
+            }
+            .textoMobile{
+                grid-area: texto;
+                margin-left: 0;
+                margin-right: 0;
+                justify-items: center;
+                h4{
+                    font-size: $fuente-n3;
+                    margin-top: 2vh;
+                }
+                p{
+                    font-size: $fuente-n2;
+                    font-style: italic;
+                    opacity: $opacidad-por-defecto;
+                    margin-top: 2vh;
+                }
+            }
+        }
+
+        .beluMobile{
+            display: block;
+            grid-area: belu;
+            width: 100%;
+            justify-self: center;
+            margin-top: 5vh;
+            .fotoMobile{
+                img{
+                    width: 100%;
+                }
+            }
+            .textoMobile{
+                grid-area: texto;
+                margin-left: 0;
+                margin-right: 0;
+                justify-items: center;
+                h4{
+                    font-size: $fuente-n3;
+                    margin-top: 2vh;
+                }
+                p{
+                    font-size: $fuente-n2;
+                    font-style: italic;
+                    opacity: $opacidad-por-defecto;
+                    margin-top: 2vh;
+                }
+            }
+        }
+
+        .jlMobile{
+            display: block;
+            grid-area: jl;
+            width: 100%;
+            justify-self: center;
+            margin-top: 5vh;
+            .fotoMobile{
+                img{
+                    width: 100%;
+                }
+            }
+            .textoMobile{
+                grid-area: texto;
+                margin-left: 0;
+                margin-right: 0;
+                justify-items: center;
+                h4{
+                    font-size: $fuente-n3;
+                    margin-top: 2vh;
+                }
+                p{
+                    font-size: $fuente-n2;
+                    font-style: italic;
+                    opacity: $opacidad-por-defecto;
+                    margin-top: 2vh;
+                }
+            }
+        }
+
+        .jjMobile{
+            display: block;
+            grid-area: jj;
+            width: 100%;
+            justify-self: center;
+            margin-top: 5vh;
+            .fotoMobile{
+                img{
+                    width: 100%;
+                }
+            }
+            .textoMobile{
+                grid-area: texto;
+                margin-left: 0;
+                margin-right: 0;
+                justify-items: center;
+                h4{
+                    font-size: $fuente-n3;
+                    margin-top: 2vh;
+                }
+                p{
+                    font-size: $fuente-n2;
+                    font-style: italic;
+                    opacity: $opacidad-por-defecto;
+                    margin-top: 2vh;
+                }
+            }
+        }
+
+        .nosotrosTitulos{
+            margin-left: 0;
+            margin-top: 0;
+            h3{
+                font-weight: $grosor-n3;
+                font-size: $fuente-n4;
+                grid-area: nuestro;
+                align-self: end;
+                animation-name: colorTexto;
+                animation-duration: $duracion-por-defecto;
+            }
+            /*Título principal - Equipo*/
+            h1{
+                font-size: $fuente-n7;
+                font-weight: $grosor-n4;
+                grid-area: equipo;
+                align-self: start;
+                animation-name: colorTexto;
+                animation-duration: $duracion-por-defecto;
+            }
+        }
+
+        .cartaSoli{
+            display: none;
+        }
+
+        .cartaBelu{
+            display: none;
+        }
+
+        .cartaJl{
+            display: none;
+        }
+
+        .cartaJj{
+            display: none;
+        }
+
+        .popup{
+            display: none;
+        }
+    }
+}

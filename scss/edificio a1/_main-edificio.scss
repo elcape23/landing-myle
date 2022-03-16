@@ -1,0 +1,140 @@
+@import "base/variables";
+@import "base/lista";
+@import "edificio a1/contenedor-edificio";
+
+.contenidoPrincipalEdificio{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                         "cuadro ."
+                         "boton .";
+    grid-template-rows: 5vh 70vh 10vh;
+    grid-template-columns: 70% 30%;
+    h1{
+        font-size: $fuente-n6;
+        font-weight: $grosor-n4;
+        grid-area: titulo;
+        margin-top: 1px;
+        margin-left: $margen-lateral-principal + 2vw;
+    }
+    .ubicacion{
+        grid-area: cuadro;
+        background-color: nth($colores, 2);
+        height: 50vh;
+        width: 20vw;
+        padding: 2vw;
+        margin-top: 10vh;
+        margin-left: $margen-lateral-principal + 2vw;
+        display: grid;
+        grid-template-areas: "ubicacion ubicacion"
+                             "direccion direccion"
+                             "cliente cliente"
+                             "categoria categoria"
+                             "proyecto proyecto"
+                             "info info";
+        grid-template-rows: 15vh 5vh 5vh 5vh 15vh 5vh;
+        .tituloUbicacion{
+            grid-area: ubicacion;
+            font-size: $fuente-n3-medio;
+        }
+        .tituloDireccion{
+            grid-area: direccion;
+            font-size: $fuente-n2;
+        }
+        .tituloCliente{
+            grid-area: cliente;
+            font-size: $fuente-n2;
+        }
+        .tituloCategoria{
+            grid-area: categoria;
+            font-size: $fuente-n2;
+        }
+        .tituloProyecto{
+            grid-area: proyecto;
+            font-size: $fuente-n2;
+        }
+        .tituloInfo{
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 1.5vh;
+            text-decoration: none;
+            font-size: $fuente-n3;
+            color: nth($colores, 1);
+            background-color: nth($colores, 3);
+            border: solid 1px nth($colores,1);
+            align-self: center;
+            transition: $transicion-por-defecto;
+            &:hover{
+                transform: scale(1.05);
+                border: solid 2px;
+                opacity: 0.8;
+            }
+        }
+    }
+    .botonAtras{
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 15vh;
+        background-color: transparent;
+        border: solid 1px nth($colores,1);
+        transition: $transicion-por-defecto;
+        &:hover{
+            transform: scale(1.05);
+            border: solid 2px;
+            opacity: 0.8;
+            background-color: nth($colores, 3);
+        }
+        a{
+            color: nth($colores, 1);
+            text-decoration: none;
+            font-weight: $grosor-n3;
+            font-size: $fuente-n1;
+        }
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    .contenidoPrincipalEdificio{
+        grid-area: ppal;
+        display: grid;
+        grid-template-areas: ". titulo ."
+                             ". cuadro ."
+                             ". boton .";
+        grid-template-rows: 5vh 70vh 10vh;
+        grid-template-columns: 10% 80% 10%;
+        h1{
+            font-size: $fuente-n4;
+            justify-self: center;
+            margin-top: 2vh;
+            margin-left: 0;
+        }
+        .ubicacion{
+            grid-area: cuadro;
+            height: 45vh;
+            width: 100%;
+            justify-self: center;
+            align-self: center;
+            padding: 5vw;
+            margin-top: 0vh;
+            margin-left: 0;
+            grid-template-rows: 10vh 5vh 5vh 5vh 10vh 10vh;
+        }
+        .botonAtras{
+            margin-top: 10vh;
+            margin-left: 5vw;
+            background-color: nth($colores, 1);
+            a{
+                color: nth($colores, 2);
+                text-decoration: none;
+                font-weight: $grosor-n3;
+                font-size: $fuente-n1;
+            }
+        }
+    }
+}

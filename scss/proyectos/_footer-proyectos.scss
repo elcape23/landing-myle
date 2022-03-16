@@ -1,0 +1,56 @@
+@import "base/variables";
+@import "base/lista";
+@import "proyectos/contenedor-proyectos";
+
+.piePaginaProyectos{
+    grid-area: pieProy;
+    ul{
+        position: absolute;
+        display: block;
+        justify-self: left;
+        list-style: none;
+        margin-bottom: 20vh;
+        margin-left: 2vw;
+        transition: $transicion-por-defecto;
+        }
+        li{
+            a{
+                svg{
+                transition: $transicion-por-defecto;
+                &:hover{
+                    opacity: $opacidad-secundaria;
+                    transform: scale(1.05);}
+            }
+        }
+    }
+    .copyrightProyectos{
+        position: absolute;
+        margin-bottom: 40vh;
+        font-size: $fuente-n0;
+        color:nth($colores, 1);
+        transform: rotate(-90deg);
+        strong{
+            font-weight: $grosor-n3;
+        }
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    .piePaginaProyectos{
+        grid-area: pieProy;
+        ul{
+            display: flex;
+            justify-self: left;
+            list-style: none;
+            margin-bottom: 0;
+            margin-left: 0;
+        }
+        .copyrightProyectos{
+            margin-bottom: 0;
+            transform: rotate(0deg);
+            justify-self: right;
+            margin-right: 2vw;
+        }
+    }
+}

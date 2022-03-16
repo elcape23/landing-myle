@@ -1,0 +1,35 @@
+@import "base/variables";
+@import "base/lista";
+
+.contenedorEdificio{
+    display: grid;
+    grid-template-areas: "logo . nav"
+                        "ppal ppal ppal"
+                        "pie pie pie";
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-columns: 50% 25% 25%;
+    animation-name: contenedorEdificio;
+    animation-duration: 3s;
+}
+
+@keyframes contenedorEdificio{
+    0%{
+        opacity: 0.0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    .contenedorEdificio{
+        grid-template-areas: ". logo ."
+                             "nav nav nav"
+                             "ppal ppal ppal"
+                             "pie pie pie";
+    grid-template-rows: 8vh 4vh 85vh 5vh;
+    grid-template-columns: 10% 80% 10%;
+    }
+}

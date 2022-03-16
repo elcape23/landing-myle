@@ -1,0 +1,153 @@
+@import "base/variables";
+@import "base/lista";
+
+.contenedorNosotros{
+    display: grid;
+    grid-template-areas: "logo nav"
+                         "ppalNos ppalNos"
+                         "pie pie";
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-columns: 50% 50%;
+    animation-name: contenedor;
+    animation-duration: $duracion-por-defecto;
+}
+
+@keyframes contenedor{
+    0%{
+        opacity: 0.0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.botonSoli{
+    position: absolute;
+    display: block;
+    width: 27.5vw;
+    height: 75vh;
+    margin-left: 45.65vw;
+    margin-top: 18.33vh;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    &:hover{
+        .imagenSoli{
+            display: block;
+        }
+    }
+}
+
+.imagenSoli{
+    display: none;
+    position: absolute;
+    width: 27.9vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+}
+
+.botonBelu{
+    position: absolute;
+    display: block;
+    width: 27.5vw;
+    height: 75vh;
+    margin-top: 26.4vh;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    &:hover{
+        .imagenBelu{
+            display: block;
+        }
+    }
+}
+
+.imagenBelu{
+    display: none;
+    position: absolute;
+    width: 19.6vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+}
+
+.botonJl{
+    position: absolute;
+    display: block;
+    width: 27.5vw;
+    height: 75vh;
+    margin-top: 23vh;
+    margin-left: 16.65vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    &:hover{
+        .imagenJl{
+            display: block;
+        }
+    }
+}
+
+.imagenJl{
+    display: none;
+    position: absolute;
+    width: 30.15vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+}
+
+.botonJj{
+    position: absolute;
+    display: block;
+    width: 25.5vw;
+    height: 75vh;
+    margin-top: 13vh;
+    justify-self: right;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+    z-index: 1;
+    &:hover{
+        .imagenJj{
+            display: block;
+        }
+    }
+}
+
+.imagenJj{
+    display: none;
+    position: absolute;
+    width: 25.5vw;
+    animation-name: contenedor;
+    animation-duration: 1s;
+    transition: all 1s ease-in-out;
+}
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    .contenedorNosotros{
+        grid-template-areas: ". logo ."
+                             "nav nav nav"
+                             ". ppalNos ."
+                             "pie pie pie";
+        grid-template-rows: 8vh 4vh 380vh 5vh;
+        grid-template-columns: 10% 80% 10%;
+    }
+    .botonSoli{
+        display: none;
+    }
+    .botonJj{
+        display: none;
+    }
+    .botonJl{
+        display: none;
+    }
+    .botonBelu{
+        display: none;
+    }
+}

@@ -1,0 +1,40 @@
+@import "base/variables";
+@import "base/lista";
+@import "index/navegador";
+
+.contenedorProyectos{
+    display: grid;
+    grid-template-areas: "logo . nav"
+                        "ppal ppal ppal"
+                        "pieProy pieProy pieProy";
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-columns: 50% 25% 25%;
+    background-color: nth($colores, 2);
+    animation-name: contenedorProyectos;
+    animation-duration: 3s;
+}
+.proyectosMobile{
+    display: none;
+}
+
+@keyframes contenedorProyectos{
+    0%{
+        opacity: 0.0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    .contenedorProyectos{
+        grid-template-areas: ". logo ."
+                             "nav nav nav"
+                             "ppal ppal ppal"
+                             "pieProy pieProy pieProy";
+        grid-template-rows: 8vh 4vh 160vh 5vh;
+        grid-template-columns: 10% 80% 10%;
+    }
+}

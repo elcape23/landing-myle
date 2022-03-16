@@ -1,0 +1,37 @@
+@import "index/contenedor";
+@import "base/variables";
+
+header {
+    grid-area: logo;
+    align-self: center;
+    margin-left: 12vw;
+    img{
+        width: 30%;
+        transition: $transicion-por-defecto;
+        animation-name: colorTexto;
+        animation-duration: $duracion-por-defecto;
+        &:hover{
+            opacity: $opacidad-por-defecto;
+        }
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    header {
+        grid-area: logo;
+        align-self: center;
+        margin-left: 0;
+        justify-self: center;
+        width: 50%;
+        img{
+            width: 100%;
+            transition: $transicion-por-defecto;
+            animation-name: colorTexto;
+            animation-duration: $duracion-por-defecto;
+            &:hover{
+                opacity: $opacidad-por-defecto;
+            }
+        }
+    }
+}

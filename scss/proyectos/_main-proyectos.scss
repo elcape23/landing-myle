@@ -1,0 +1,161 @@
+@import "base/variables";
+@import "base/lista";
+@import "proyectos/contenedor-proyectos";
+
+.contenidoPrincipalProyectos{
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: ". nuestros ."
+                         ". proyectos ."
+                         ". img .";
+    grid-template-rows: 5vh 8vh 72vh;
+    grid-template-columns: 12vw 76vw 12vw;
+    h3{
+        font-weight: $grosor-n3;
+        grid-area: nuestros;
+        align-self: start;
+        animation-name: colorTexto;
+        animation-duration: 3s;
+    }
+    h1{
+        font-size: $fuente-n6;
+        font-weight: $grosor-n4;
+        grid-area: proyectos;
+        align-self: end;
+        animation-name: colorTexto;
+        animation-duration: 3s;
+    }
+    .carousel{
+        height: 72vh;
+        grid-area: img;
+        animation-name: carousel;
+        animation-duration: 3s;
+        div{
+            height: 100%;
+            img{
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    .contenidoPrincipalProyectos{
+        grid-template-areas: ". texto1 ."
+                             ". texto2 ."
+                             ". proyectos .";
+        grid-template-rows: 5vh 5vh 150vh;
+        grid-template-columns: 10% 80% 10%;
+        h3{
+            grid-area: texto1;
+        }
+        h1{
+            grid-area: texto2;
+            font-size: $fuente-n4;
+        }
+        .proyectosMobile{
+            grid-area: proyectos;
+            display: grid;
+            grid-template-areas: "uno uno"
+                                 "dos dos"
+                                 "tres tres"
+                                 "cuatro cuatro";
+            grid-template-columns: 50% 50%;
+            .proyectoUnoMobile{
+                grid-area: uno;
+                width: 100%;
+                margin-top: 3vh;
+                .imagenProyectoMobile{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .textoProyectoMobile{
+                    h5{
+                        margin-top: 2vh;
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                    }
+                    h6{
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                        opacity: $opacidad-por-defecto;
+                    }
+                }
+            }
+            .proyectoDosMobile{
+                grid-area: dos;
+                width: 100%;
+                margin-top: 3vh;
+                .imagenProyectoMobile{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .textoProyectoMobile{
+                    h5{
+                        margin-top: 2vh;
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                    }
+                    h6{
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                        opacity: $opacidad-por-defecto;
+                    }
+                }
+            }
+
+            .proyectoTresMobile{
+                grid-area: tres;
+                width: 100%;
+                margin-top: 3vh;
+                .imagenProyectoMobile{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .textoProyectoMobile{
+                    h5{
+                        margin-top: 2vh;
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                    }
+                    h6{
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                        opacity: $opacidad-por-defecto;
+                    }
+                }
+            }
+            .proyectoCuatroMobile{
+                grid-area: cuatro;
+                width: 100%;
+                margin-top: 3vh;
+                .imagenProyectoMobile{
+                    img{
+                        width: 100%;
+                    }
+                }
+                .textoProyectoMobile{
+                    h5{
+                        margin-top: 2vh;
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                    }
+                    h6{
+                        font-size: $fuente-n3;
+                        font-weight: $grosor-n3;
+                        opacity: $opacidad-por-defecto;
+                    }
+                }
+            }
+        }
+        .carousel{
+            display: none;
+        }
+    }
+}

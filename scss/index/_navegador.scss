@@ -1,0 +1,73 @@
+@import "base/variables";
+@import "base/lista";
+@import "index/contenedor";
+
+nav{
+    grid-area: nav;
+    align-self: center;
+    justify-self: right;
+    margin-right: $margen-lateral-principal - 9vw;
+    animation-name: colorTexto;
+    animation-duration: $duracion-por-defecto;
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            transition: $transicion-por-defecto;
+            &:hover{
+                transform: scale(1.03);
+            }
+            .active{
+                font-weight: $grosor-n4;
+            }
+            a{
+                padding: 1.5vh;
+                font-size: $fuente-n2;
+                text-decoration: none;
+                color: nth($colores, 1);
+                transition: $transicion-por-defecto;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+    nav{
+        align-self: center;
+        justify-self: center;
+        margin-right: 0;
+        ul{
+            display: flex;
+            list-style: none;
+            li{
+                transition: $transicion-por-defecto;
+                .active{
+                    font-weight: $grosor-n4;
+                }
+                a{
+                    padding: 14px;
+                    font-size: $fuente-n2;
+                    text-decoration: none;
+                    color: nth($colores, 1);
+                    transition: $transicion-por-defecto;
+                    &:hover{
+                        opacity: 0.5;
+                    }
+                }
+                ul{
+                    display: none;
+                    list-style: none;
+                    position: absolute;
+                    li{
+                        margin-top: 2vh;
+                        justify-self: left;
+                    }
+                }
+            }
+        }
+    }
+}

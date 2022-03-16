@@ -1,0 +1,2289 @@
+@charset "UTF-8";
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+header {
+  grid-area: logo;
+  align-self: center;
+  margin-left: 12vw; }
+  header img {
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+    animation-name: colorTexto;
+    animation-duration: 3s; }
+    header img:hover {
+      opacity: 0.5; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  header {
+    grid-area: logo;
+    align-self: center;
+    margin-left: 0;
+    justify-self: center;
+    width: 50%; }
+    header img {
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+      animation-name: colorTexto;
+      animation-duration: 3s; }
+      header img:hover {
+        opacity: 0.5; } }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+nav {
+  grid-area: nav;
+  align-self: center;
+  justify-self: right;
+  margin-right: 1vw;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+  nav ul {
+    display: flex;
+    list-style: none; }
+    nav ul li {
+      transition: all 0.3s ease-in-out; }
+      nav ul li:hover {
+        transform: scale(1.03); }
+      nav ul li .active {
+        font-weight: 900; }
+      nav ul li a {
+        padding: 1.5vh;
+        font-size: 2.2vh;
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease-in-out; }
+        nav ul li a:hover {
+          opacity: 0.5; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  nav {
+    align-self: center;
+    justify-self: center;
+    margin-right: 0; }
+    nav ul {
+      display: flex;
+      list-style: none; }
+      nav ul li {
+        transition: all 0.3s ease-in-out; }
+        nav ul li .active {
+          font-weight: 900; }
+        nav ul li a {
+          padding: 14px;
+          font-size: 2.2vh;
+          text-decoration: none;
+          color: black;
+          transition: all 0.3s ease-in-out; }
+          nav ul li a:hover {
+            opacity: 0.5; }
+        nav ul li ul {
+          display: none;
+          list-style: none;
+          position: absolute; }
+          nav ul li ul li {
+            margin-top: 2vh;
+            justify-self: left; } }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*Contenido principal*/
+main {
+  grid-area: ppal;
+  display: grid;
+  grid-template-areas: ". . titulos" "quienes texto texto" "project project project" "contacto contacto contacto";
+  grid-template-rows: 90vh 60vh 70vh 60vh;
+  grid-template-columns: 25% 40% 35%;
+  position: relative;
+  /*Caja con títulos*/
+  /*Flecha abajo*/
+  /*Línea divisoria*/
+  /* Título Sobre Nosotros*/
+  /*Párrafos sobre nosotros*/
+  /*Línea divisoria*/
+  /*Nuestro proyectos*/
+  /*Línea divisoria*/
+  /*Contacto*/
+  /*Logo de WhatsApp*/ }
+  main .contenedorTitulos {
+    grid-area: titulos;
+    margin-top: 30vh;
+    /*Título secundario - Residencial*/
+    /*Título principal - Edificio A1*/
+    /*Botón Conocer más*/ }
+    main .contenedorTitulos h3 {
+      color: black;
+      font-size: 2.5vh;
+      font-weight: 600; }
+    main .contenedorTitulos h1 {
+      color: black;
+      font-size: 9vh;
+      font-weight: 900;
+      margin-bottom: 5vh; }
+    main .contenedorTitulos a {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: transparent;
+      border: solid 2px black;
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 2vh;
+      transition: all 0.3s ease-in-out; }
+      main .contenedorTitulos a:hover {
+        transform: scale(1.05);
+        opacity: 0.6;
+        background-color: #FFC229; }
+  main .flechaAbajo img {
+    position: absolute;
+    margin-left: 50%;
+    margin-top: 70vh;
+    width: 3%; }
+  main .lineaDivisoria {
+    position: absolute;
+    margin-top: 105vh;
+    justify-self: center;
+    background-color: black;
+    height: 0.5px;
+    width: 80vw;
+    opacity: 0.3; }
+  main h2 {
+    grid-area: quienes;
+    align-self: start;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    font-size: 5vh; }
+    main h2 b {
+      color: #FFC229; }
+  main .sobreNosotrosTexto {
+    margin-top: 20vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    grid-area: texto;
+    align-self: start;
+    /*Primer título*/
+    /*Párrafo principal*/
+    /*Botón Leer más*/ }
+    main .sobreNosotrosTexto h6 {
+      font-size: 1.8vh;
+      opacity: 0.5; }
+    main .sobreNosotrosTexto .parrafoUno {
+      font-size: 1.8vh;
+      margin-top: 3vh;
+      margin-bottom: 4vh;
+      column-count: 2;
+      column-gap: 4vw;
+      line-height: 3.5vh; }
+    main .sobreNosotrosTexto button {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 1.5vh;
+      background-color: white;
+      border: solid 1px black;
+      transition: all 0.3s ease-in-out; }
+      main .sobreNosotrosTexto button:hover {
+        transform: scale(1.05);
+        border: solid 1.5px;
+        opacity: 0.8;
+        background-color: #FFC229; }
+      main .sobreNosotrosTexto button a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 2vh; }
+  main .lineaDivisoriaDos {
+    position: absolute;
+    margin-top: 155vh;
+    justify-self: center;
+    background-color: black;
+    height: 0.5px;
+    width: 80vw;
+    opacity: 0.3; }
+  main .projectsMain {
+    grid-area: project;
+    display: grid;
+    grid-template-areas: "titulo projectOne projectTwo" "texto projectOne projectTwo";
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 30% 35% 35%;
+    /*Títulos proyectos*/
+    /*Párrafo explicativo de nuestros proyectos*/
+    /*Primer proyecto*/
+    /*Segundo proyecto*/ }
+    main .projectsMain h3 {
+      grid-area: titulo;
+      align-self: start;
+      margin-top: 10vh;
+      margin-left: 10vw;
+      margin-right: 10vw;
+      font-size: 5vh;
+      font-weight: 600; }
+    main .projectsMain .projectsParrafo {
+      grid-area: texto;
+      margin-left: 10vw;
+      justify-self: center;
+      font-weight: 2.5vh;
+      font-size: 1.8vh;
+      line-height: 3.5vh;
+      /*Botón ver proyectos*/ }
+      main .projectsMain .projectsParrafo button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 4vh;
+        background-color: white;
+        border: solid 1px black;
+        transition: all 0.3s ease-in-out; }
+        main .projectsMain .projectsParrafo button:hover {
+          transform: scale(1.05);
+          border: solid 1.5px;
+          opacity: 0.8;
+          background-color: #FFC229; }
+        main .projectsMain .projectsParrafo button a {
+          color: black;
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 2vh;
+          transition: all 0.3s ease-in-out; }
+    main .projectsMain .projectOne {
+      align-self: center;
+      grid-area: projectOne;
+      margin-top: 5vh;
+      margin-left: 10vw;
+      /*Nombre del proyecto*/
+      /*Nombre de la ubicación del proyecto*/ }
+      main .projectsMain .projectOne a img {
+        transition: all 0.3s ease-in-out;
+        width: 100%; }
+        main .projectsMain .projectOne a img:hover {
+          opacity: 0.8;
+          transform: scale(1.02); }
+      main .projectsMain .projectOne .tituloProjectOne {
+        font-size: 2vh;
+        margin-top: 2vh; }
+      main .projectsMain .projectOne .ubicacionProjectOne {
+        margin-top: 1vh;
+        opacity: 0.3; }
+    main .projectsMain .projectTwo {
+      align-self: center;
+      grid-area: projectTwo;
+      margin-top: 5vh;
+      margin-right: 10vw;
+      /*Nombre del proyecto*/
+      /*Nombre de la ubicación del proyecto*/ }
+      main .projectsMain .projectTwo a img {
+        width: 100%;
+        transition: all 0.3s ease-in-out; }
+        main .projectsMain .projectTwo a img:hover {
+          opacity: 0.8;
+          transform: scale(1.02); }
+      main .projectsMain .projectTwo .tituloProjectTwo {
+        font-size: 2vh;
+        margin-top: 2vh; }
+      main .projectsMain .projectTwo .ubicacionProjectTwo {
+        margin-top: 1vh;
+        opacity: 0.3; }
+  main .lineaDivisoriaTres {
+    position: absolute;
+    margin-top: 215vh;
+    justify-self: center;
+    background-color: black;
+    height: 0.5px;
+    width: 80vw;
+    opacity: 0.3; }
+  main .contactoIndex {
+    grid-area: contacto;
+    position: relative;
+    display: flex; }
+    main .contactoIndex img {
+      position: absolute;
+      width: 100%;
+      opacity: 0.8;
+      z-index: -1; }
+    main .contactoIndex .contactoColumnaUno {
+      margin-left: 10vw; }
+      main .contactoIndex .contactoColumnaUno h3 {
+        color: black;
+        font-size: 5vh;
+        font-weight: 600;
+        margin-top: 5vh;
+        margin-bottom: 20vh; }
+      main .contactoIndex .contactoColumnaUno h4 {
+        color: black;
+        margin-top: 10vh;
+        font-weight: 500;
+        font-size: 1.8vh; }
+      main .contactoIndex .contactoColumnaUno h5 {
+        color: black;
+        margin-top: 2vh;
+        font-size: 2.5vh; }
+      main .contactoIndex .contactoColumnaUno h6 {
+        color: black;
+        margin-top: 5vh;
+        font-weight: 300;
+        font-size: 1.8vh; }
+    main .contactoIndex .contactoColumnaDos {
+      margin-left: 3vw;
+      margin-top: 21vh; }
+      main .contactoIndex .contactoColumnaDos h4 {
+        color: black;
+        margin-top: 10vh;
+        font-weight: 500;
+        font-size: 1.8vh; }
+      main .contactoIndex .contactoColumnaDos h5 {
+        color: black;
+        margin-top: 2vh;
+        font-size: 2.5vh; }
+      main .contactoIndex .contactoColumnaDos h6 {
+        color: black;
+        margin-top: 5vh;
+        font-weight: 300;
+        font-size: 1.8vh; }
+  main .logoWhatsapp {
+    position: fixed;
+    margin-left: 90vw;
+    margin-top: 75vh;
+    animation-name: colorTexto;
+    animation-duration: 3s; }
+    main .logoWhatsapp img {
+      width: 90%;
+      transition: all 0.3s ease-in-out; }
+      main .logoWhatsapp img:hover {
+        opacity: 0.8;
+        transform: scale(1.05); }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  main {
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: "titulos titulos titulos" ". flecha ." ". quienes ." ". texto ." "project project project" "contacto contacto contacto";
+    grid-template-rows: 78vh 10vh 10vh 75vh 120vh 50vh;
+    grid-template-columns: 10% 80% 10%;
+    position: relative;
+    /*Caja con títulos*/
+    /*Flecha abajo*/
+    /*Línea divisoria*/
+    /* Título Sobre Nosotros*/
+    /*Párrafos sobre nosotros*/
+    /*Línea divisoria*/
+    /*Nuestro proyectos*/
+    /*Línea divisoria*/
+    /*Contacto*/
+    /*Logo de WhatsApp*/ }
+    main .contenedorTitulos {
+      justify-self: center;
+      align-self: end;
+      margin-top: 0;
+      width: 100%;
+      /*Título secundario - Residencial*/
+      /*Título principal - Edificio A1*/
+      /*Botón Conocer más*/ }
+      main .contenedorTitulos h3 {
+        display: none; }
+      main .contenedorTitulos h1 {
+        justify-content: center;
+        background-color: white;
+        font-size: 5vh;
+        margin-bottom: 3vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10vw;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+      main .contenedorTitulos a {
+        padding-left: 10vw;
+        background-color: #FFC229;
+        border: 0px;
+        color: black;
+        font-weight: 900;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    main .flechaAbajo {
+      grid-area: flecha;
+      align-self: center;
+      margin-left: 45%; }
+      main .flechaAbajo img {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 0;
+        width: 10%; }
+    main .lineaDivisoria {
+      margin-top: 88vh; }
+    main h2 {
+      grid-area: quienes;
+      justify-self: center;
+      align-self: start;
+      margin-top: 2vh;
+      margin-left: 0; }
+    main .sobreNosotrosTexto {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      justify-self: center;
+      /*Primer título*/
+      /*Párrafo principal*/ }
+      main .sobreNosotrosTexto h6 {
+        justify-self: center; }
+      main .sobreNosotrosTexto .parrafoUno {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        column-count: 1;
+        column-gap: 0; }
+    main .lineaDivisoriaDos {
+      position: absolute;
+      margin-top: 173vh;
+      justify-self: center;
+      background-color: black;
+      height: 0.5px;
+      width: 80vw;
+      opacity: 0.3; }
+    main .projectsMain {
+      grid-area: project;
+      display: grid;
+      grid-template-areas: ". tituloProy ." ". textoProy ." ". projectOne ." ". projectTwo .";
+      grid-template-rows: 8vh 45vh 30vh 30vh;
+      grid-template-columns: 10% 80% 10%;
+      /*Títulos proyectos*/
+      /*Párrafo explicativo de nuestros proyectos*/
+      /*Primer proyecto*/
+      /*Segundo proyecto*/ }
+      main .projectsMain h3 {
+        grid-area: tituloProy;
+        align-self: end;
+        margin-top: 0;
+        margin-left: 10vw;
+        margin-right: 0; }
+      main .projectsMain .projectsParrafo {
+        grid-area: textoProy;
+        margin-left: 0;
+        justify-self: center;
+        font-weight: 2.5vh;
+        font-size: 2vh;
+        line-height: 3.5vh;
+        /*Botón ver proyectos*/ }
+        main .projectsMain .projectsParrafo button {
+          margin-top: 3vh; }
+      main .projectsMain .projectOne {
+        align-self: center;
+        grid-area: projectOne;
+        margin-top: 0;
+        margin-left: 0; }
+        main .projectsMain .projectOne .ubicacionProjectOne {
+          font-size: 2vh; }
+      main .projectsMain .projectTwo {
+        align-self: center;
+        grid-area: projectTwo;
+        margin-top: 0;
+        margin-right: 0; }
+        main .projectsMain .projectTwo .ubicacionProjectTwo {
+          font-size: 2vh; }
+    main .lineaDivisoriaTres {
+      margin-top: 290vh; }
+    main .contactoIndex {
+      display: block; }
+      main .contactoIndex img {
+        display: none; }
+      main .contactoIndex .contactoColumnaUno {
+        margin-left: 10vw; }
+        main .contactoIndex .contactoColumnaUno h3 {
+          margin-top: 0;
+          margin-bottom: 5vh; }
+        main .contactoIndex .contactoColumnaUno h4 {
+          margin-top: 2vh;
+          font-weight: 600;
+          font-size: 2.2vh; }
+        main .contactoIndex .contactoColumnaUno h5 {
+          margin-top: 2vh;
+          font-size: 3.2vh; }
+        main .contactoIndex .contactoColumnaUno h6 {
+          margin-top: 2vh;
+          font-weight: 300;
+          font-size: 2.2vh; }
+      main .contactoIndex .contactoColumnaDos {
+        margin-left: 10vw;
+        margin-top: 0; }
+        main .contactoIndex .contactoColumnaDos h4 {
+          margin-top: 2vh;
+          font-weight: 600;
+          font-size: 2.2vh; }
+        main .contactoIndex .contactoColumnaDos h5 {
+          margin-top: 2vh;
+          font-size: 3.2vh; }
+        main .contactoIndex .contactoColumnaDos h6 {
+          margin-top: 2vh;
+          font-weight: 300;
+          font-size: 2.2vh; }
+    main .logoWhatsapp {
+      position: fixed;
+      margin-left: 80vw;
+      margin-top: 58vh; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  main {
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: "titulos titulos titulos" ". flecha ." ". quienes ." ". texto ." "project project project" "contacto contacto contacto";
+    grid-template-rows: 75vh 50vh 10vh 60vh 133vh 50vh;
+    grid-template-columns: 10% 80% 10%;
+    position: relative;
+    /*Caja con títulos*/
+    /*Flecha abajo*/
+    /*Línea divisoria*/
+    /* Título Sobre Nosotros*/
+    /*Párrafos sobre nosotros*/
+    /*Línea divisoria*/
+    /*Nuestro proyectos*/
+    /*Línea divisoria*/
+    /*Contacto*/
+    /*Logo de WhatsApp*/ }
+    main .contenedorTitulos {
+      justify-self: center;
+      align-self: end;
+      margin-top: 0;
+      width: 100%;
+      /*Título secundario - Residencial*/
+      /*Título principal - Edificio A1*/
+      /*Botón Conocer más*/ }
+      main .contenedorTitulos h3 {
+        display: none; }
+      main .contenedorTitulos h1 {
+        justify-content: center;
+        background-color: white;
+        font-size: 7vh;
+        margin-bottom: 3vh;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10vw;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+      main .contenedorTitulos a {
+        font-size: 2.5vh;
+        padding-left: 10vw;
+        background-color: #FFC229;
+        border: 0px;
+        color: black;
+        font-weight: 900;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    main .flechaAbajo {
+      grid-area: flecha;
+      align-self: start;
+      margin-left: 45%; }
+      main .flechaAbajo img {
+        position: absolute;
+        margin-left: 0;
+        margin-top: 2vh;
+        width: 10%; }
+    main .lineaDivisoria {
+      margin-top: 127vh; }
+    main h2 {
+      grid-area: quienes;
+      justify-self: center;
+      align-self: start;
+      margin-top: 2vh;
+      margin-left: 0; }
+    main .sobreNosotrosTexto {
+      margin-top: 0;
+      margin-left: 0;
+      margin-right: 0;
+      justify-self: center;
+      /*Primer título*/
+      /*Párrafo principal*/ }
+      main .sobreNosotrosTexto h6 {
+        justify-self: center; }
+      main .sobreNosotrosTexto .parrafoUno {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        column-count: 1;
+        column-gap: 0; }
+    main .lineaDivisoriaDos {
+      position: absolute;
+      margin-top: 193vh;
+      justify-self: center;
+      background-color: black;
+      height: 0.5px;
+      width: 80vw;
+      opacity: 0.3; }
+    main .projectsMain {
+      grid-area: project;
+      display: grid;
+      grid-template-areas: ". tituloProy ." ". textoProy ." ". projectOne ." ". projectTwo .";
+      grid-template-rows: 8vh 35vh 42vh 42vh;
+      grid-template-columns: 10% 80% 10%;
+      /*Títulos proyectos*/
+      /*Párrafo explicativo de nuestros proyectos*/
+      /*Primer proyecto*/
+      /*Segundo proyecto*/ }
+      main .projectsMain h3 {
+        grid-area: tituloProy;
+        align-self: end;
+        margin-top: 0;
+        margin-left: 10vw;
+        margin-right: 0; }
+      main .projectsMain .projectsParrafo {
+        grid-area: textoProy;
+        margin-left: 0;
+        justify-self: center;
+        font-weight: 2.5vh;
+        font-size: 2vh;
+        line-height: 3.5vh;
+        /*Botón ver proyectos*/ }
+        main .projectsMain .projectsParrafo button {
+          margin-top: 3vh; }
+      main .projectsMain .projectOne {
+        align-self: start;
+        grid-area: projectOne;
+        margin-top: 0;
+        margin-left: 0; }
+        main .projectsMain .projectOne .tituloProjectOne {
+          font-size: 2.5vh; }
+        main .projectsMain .projectOne .ubicacionProjectOne {
+          font-size: 2.2vh; }
+      main .projectsMain .projectTwo {
+        align-self: start;
+        grid-area: projectTwo;
+        margin-top: 0;
+        margin-right: 0; }
+        main .projectsMain .projectTwo .tituloProjectTwo {
+          font-size: 2.5vh; }
+        main .projectsMain .projectTwo .ubicacionProjectTwo {
+          font-size: 2vh; }
+    main .lineaDivisoriaTres {
+      margin-top: 325vh; }
+    main .contactoIndex {
+      display: block; }
+      main .contactoIndex img {
+        display: none; }
+      main .contactoIndex .contactoColumnaUno {
+        margin-left: 10vw; }
+        main .contactoIndex .contactoColumnaUno h3 {
+          margin-top: 0;
+          margin-bottom: 5vh; }
+        main .contactoIndex .contactoColumnaUno h4 {
+          margin-top: 2vh;
+          font-weight: 600;
+          font-size: 2.2vh; }
+        main .contactoIndex .contactoColumnaUno h5 {
+          margin-top: 2vh;
+          font-size: 3.2vh; }
+        main .contactoIndex .contactoColumnaUno h6 {
+          margin-top: 2vh;
+          font-weight: 300;
+          font-size: 2.2vh; }
+      main .contactoIndex .contactoColumnaDos {
+        margin-left: 10vw;
+        margin-top: 0; }
+        main .contactoIndex .contactoColumnaDos h4 {
+          margin-top: 2vh;
+          font-weight: 600;
+          font-size: 2.2vh; }
+        main .contactoIndex .contactoColumnaDos h5 {
+          margin-top: 2vh;
+          font-size: 3.2vh; }
+        main .contactoIndex .contactoColumnaDos h6 {
+          margin-top: 2vh;
+          font-weight: 300;
+          font-size: 2.2vh; }
+    main .logoWhatsapp {
+      display: none; } }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+footer {
+  grid-area: pie;
+  display: grid;
+  grid-template-areas: "rrss copy";
+  grid-template-columns: 45% 55%;
+  z-index: 1;
+  animation-name: colorTexto;
+  animation-duration: 5s; }
+  footer ul {
+    grid-area: rrss;
+    display: flex;
+    justify-self: right;
+    margin-right: 10vw;
+    list-style: none;
+    align-self: center;
+    transition: all 0.3s ease-in-out; }
+  footer li a svg {
+    transition: all 0.3s ease-in-out; }
+    footer li a svg:hover {
+      opacity: 0.8;
+      transform: scale(1.05); }
+  footer h2 {
+    grid-area: copy;
+    font-size: 2vh;
+    font-weight: 300;
+    align-self: center;
+    color: black; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  footer {
+    grid-template-columns: 35% 65%; }
+    footer ul {
+      margin-right: 5vw;
+      margin-bottom: 3vh; }
+    footer h2 {
+      margin-bottom: 3vh; } }
+
+.contenedorNosotros {
+  display: grid;
+  grid-template-areas: "logo nav" "ppalNos ppalNos" "pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+.botonSoli {
+  position: absolute;
+  display: block;
+  width: 27.5vw;
+  height: 75vh;
+  margin-left: 45.65vw;
+  margin-top: 18.33vh;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonSoli:hover .imagenSoli {
+    display: block; }
+
+.imagenSoli {
+  display: none;
+  position: absolute;
+  width: 27.9vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+.botonBelu {
+  position: absolute;
+  display: block;
+  width: 27.5vw;
+  height: 75vh;
+  margin-top: 26.4vh;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonBelu:hover .imagenBelu {
+    display: block; }
+
+.imagenBelu {
+  display: none;
+  position: absolute;
+  width: 19.6vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+.botonJl {
+  position: absolute;
+  display: block;
+  width: 27.5vw;
+  height: 75vh;
+  margin-top: 23vh;
+  margin-left: 16.65vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonJl:hover .imagenJl {
+    display: block; }
+
+.imagenJl {
+  display: none;
+  position: absolute;
+  width: 30.15vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+.botonJj {
+  position: absolute;
+  display: block;
+  width: 25.5vw;
+  height: 75vh;
+  margin-top: 13vh;
+  justify-self: right;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonJj:hover .imagenJj {
+    display: block; }
+
+.imagenJj {
+  display: none;
+  position: absolute;
+  width: 25.5vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorNosotros {
+    grid-template-areas: ". logo ." "nav nav nav" ". ppalNos ." "pie pie pie";
+    grid-template-rows: 8vh 4vh 380vh 5vh;
+    grid-template-columns: 10% 80% 10%; }
+  .botonSoli {
+    display: none; }
+  .botonJj {
+    display: none; }
+  .botonJl {
+    display: none; }
+  .botonBelu {
+    display: none; } }
+
+.contenedorNosotros {
+  display: grid;
+  grid-template-areas: "logo nav" "ppalNos ppalNos" "pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+.botonSoli {
+  position: absolute;
+  display: block;
+  width: 27.5vw;
+  height: 75vh;
+  margin-left: 45.65vw;
+  margin-top: 18.33vh;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonSoli:hover .imagenSoli {
+    display: block; }
+
+.imagenSoli {
+  display: none;
+  position: absolute;
+  width: 27.9vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+.botonBelu {
+  position: absolute;
+  display: block;
+  width: 27.5vw;
+  height: 75vh;
+  margin-top: 26.4vh;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonBelu:hover .imagenBelu {
+    display: block; }
+
+.imagenBelu {
+  display: none;
+  position: absolute;
+  width: 19.6vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+.botonJl {
+  position: absolute;
+  display: block;
+  width: 27.5vw;
+  height: 75vh;
+  margin-top: 23vh;
+  margin-left: 16.65vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonJl:hover .imagenJl {
+    display: block; }
+
+.imagenJl {
+  display: none;
+  position: absolute;
+  width: 30.15vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+.botonJj {
+  position: absolute;
+  display: block;
+  width: 25.5vw;
+  height: 75vh;
+  margin-top: 13vh;
+  justify-self: right;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out;
+  z-index: 1; }
+  .botonJj:hover .imagenJj {
+    display: block; }
+
+.imagenJj {
+  display: none;
+  position: absolute;
+  width: 25.5vw;
+  animation-name: contenedor;
+  animation-duration: 1s;
+  transition: all 1s ease-in-out; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorNosotros {
+    grid-template-areas: ". logo ." "nav nav nav" ". ppalNos ." "pie pie pie";
+    grid-template-rows: 8vh 4vh 380vh 5vh;
+    grid-template-columns: 10% 80% 10%; }
+  .botonSoli {
+    display: none; }
+  .botonJj {
+    display: none; }
+  .botonJl {
+    display: none; }
+  .botonBelu {
+    display: none; } }
+
+/*Contenido principal Nosotros*/
+.contenidoPrincipalNosotros {
+  grid-area: ppalNos;
+  /*Cartas de versión mobile*/
+  /*Titulos*/
+  /*Cartas Mobile*/
+  /*PopUps*/ }
+  .contenidoPrincipalNosotros .participantesMobile {
+    display: none; }
+  .contenidoPrincipalNosotros .nosotrosTitulos {
+    position: absolute;
+    margin-left: 70vw;
+    margin-top: 50vh;
+    /*Título secundario - Nuestro*/
+    /*Título principal - Equipo*/ }
+    .contenidoPrincipalNosotros .nosotrosTitulos h3 {
+      font-weight: 600;
+      font-size: 4.6vh;
+      align-self: end;
+      animation-name: colorTexto;
+      animation-duration: 3s; }
+    .contenidoPrincipalNosotros .nosotrosTitulos h1 {
+      font-size: 9vh;
+      font-weight: 900;
+      align-self: start;
+      animation-name: colorTexto;
+      animation-duration: 3s; }
+  .contenidoPrincipalNosotros .soliMobile {
+    display: none; }
+  .contenidoPrincipalNosotros .beluMobile {
+    display: none; }
+  .contenidoPrincipalNosotros .jlMobile {
+    display: none; }
+  .contenidoPrincipalNosotros .jjMobile {
+    display: none; }
+  .contenidoPrincipalNosotros .cartaSoli {
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    .contenidoPrincipalNosotros .cartaSoli:target {
+      background-color: rgba(0, 0, 0, 0.5);
+      visibility: visible;
+      opacity: 1; }
+  .contenidoPrincipalNosotros .cartaBelu {
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    .contenidoPrincipalNosotros .cartaBelu:target {
+      background-color: rgba(0, 0, 0, 0.5);
+      visibility: visible;
+      opacity: 1; }
+  .contenidoPrincipalNosotros .cartaJl {
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    .contenidoPrincipalNosotros .cartaJl:target {
+      background-color: rgba(0, 0, 0, 0.5);
+      visibility: visible;
+      opacity: 1; }
+  .contenidoPrincipalNosotros .cartaJj {
+    z-index: 2;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    .contenidoPrincipalNosotros .cartaJj:target {
+      background-color: rgba(0, 0, 0, 0.5);
+      visibility: visible;
+      opacity: 1; }
+  .contenidoPrincipalNosotros .popup {
+    width: 100%;
+    max-width: 50vw;
+    height: 50vh;
+    position: relative;
+    display: flex;
+    background-color: white; }
+    .contenidoPrincipalNosotros .popup .img img {
+      height: 100%; }
+    .contenidoPrincipalNosotros .popup .container-text {
+      padding: 5vh;
+      overflow-y: auto; }
+      .contenidoPrincipalNosotros .popup .container-text h4 {
+        font-size: 3.2vh; }
+      .contenidoPrincipalNosotros .popup .container-text p {
+        font-size: 3.2vh;
+        font-style: italic;
+        margin-top: 5vh;
+        opacity: 0.5; }
+    .contenidoPrincipalNosotros .popup .btn-close-popup {
+      right: 0;
+      padding: 20px;
+      position: absolute;
+      background-color: black;
+      color: white;
+      line-height: 10px;
+      text-decoration: none;
+      font-weight: 600; }
+      .contenidoPrincipalNosotros .popup .btn-close-popup:hover {
+        opacity: 0.8; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  /*Contenido principal Nosotros*/
+  .contenidoPrincipalNosotros {
+    grid-area: ppalNos;
+    display: grid;
+    grid-template-areas: "soli soli" "belu belu" "jl jl" "jj jj";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 105vh 90vh 90vh 90vh;
+    /*Titulos*/ }
+    .contenidoPrincipalNosotros .nosotrosTitulos {
+      position: absolute;
+      margin-left: 0;
+      margin-top: 50vh;
+      /*Título secundario - Nuestro*/
+      /*Título principal - Equipo*/ }
+      .contenidoPrincipalNosotros .nosotrosTitulos h3 {
+        font-weight: 600;
+        font-size: 4.6vh;
+        align-self: end;
+        animation-name: colorTexto;
+        animation-duration: 3s; }
+      .contenidoPrincipalNosotros .nosotrosTitulos h1 {
+        font-size: 9vh;
+        font-weight: 900;
+        align-self: start;
+        animation-name: colorTexto;
+        animation-duration: 3s; }
+    .contenidoPrincipalNosotros .soliMobile {
+      display: block;
+      grid-area: soli;
+      width: 100%;
+      justify-self: center;
+      margin-top: 18vh; }
+      .contenidoPrincipalNosotros .soliMobile .fotoMobile img {
+        width: 100%; }
+      .contenidoPrincipalNosotros .soliMobile .textoMobile {
+        grid-area: texto;
+        margin-left: 0;
+        margin-right: 0;
+        justify-items: center; }
+        .contenidoPrincipalNosotros .soliMobile .textoMobile h4 {
+          font-size: 2.5vh;
+          margin-top: 2vh; }
+        .contenidoPrincipalNosotros .soliMobile .textoMobile p {
+          font-size: 2.2vh;
+          font-style: italic;
+          opacity: 0.5;
+          margin-top: 2vh; }
+    .contenidoPrincipalNosotros .beluMobile {
+      display: block;
+      grid-area: belu;
+      width: 100%;
+      justify-self: center;
+      margin-top: 5vh; }
+      .contenidoPrincipalNosotros .beluMobile .fotoMobile img {
+        width: 100%; }
+      .contenidoPrincipalNosotros .beluMobile .textoMobile {
+        grid-area: texto;
+        margin-left: 0;
+        margin-right: 0;
+        justify-items: center; }
+        .contenidoPrincipalNosotros .beluMobile .textoMobile h4 {
+          font-size: 2.5vh;
+          margin-top: 2vh; }
+        .contenidoPrincipalNosotros .beluMobile .textoMobile p {
+          font-size: 2.2vh;
+          font-style: italic;
+          opacity: 0.5;
+          margin-top: 2vh; }
+    .contenidoPrincipalNosotros .jlMobile {
+      display: block;
+      grid-area: jl;
+      width: 100%;
+      justify-self: center;
+      margin-top: 5vh; }
+      .contenidoPrincipalNosotros .jlMobile .fotoMobile img {
+        width: 100%; }
+      .contenidoPrincipalNosotros .jlMobile .textoMobile {
+        grid-area: texto;
+        margin-left: 0;
+        margin-right: 0;
+        justify-items: center; }
+        .contenidoPrincipalNosotros .jlMobile .textoMobile h4 {
+          font-size: 2.5vh;
+          margin-top: 2vh; }
+        .contenidoPrincipalNosotros .jlMobile .textoMobile p {
+          font-size: 2.2vh;
+          font-style: italic;
+          opacity: 0.5;
+          margin-top: 2vh; }
+    .contenidoPrincipalNosotros .jjMobile {
+      display: block;
+      grid-area: jj;
+      width: 100%;
+      justify-self: center;
+      margin-top: 5vh; }
+      .contenidoPrincipalNosotros .jjMobile .fotoMobile img {
+        width: 100%; }
+      .contenidoPrincipalNosotros .jjMobile .textoMobile {
+        grid-area: texto;
+        margin-left: 0;
+        margin-right: 0;
+        justify-items: center; }
+        .contenidoPrincipalNosotros .jjMobile .textoMobile h4 {
+          font-size: 2.5vh;
+          margin-top: 2vh; }
+        .contenidoPrincipalNosotros .jjMobile .textoMobile p {
+          font-size: 2.2vh;
+          font-style: italic;
+          opacity: 0.5;
+          margin-top: 2vh; }
+    .contenidoPrincipalNosotros .nosotrosTitulos {
+      margin-left: 0;
+      margin-top: 0;
+      /*Título principal - Equipo*/ }
+      .contenidoPrincipalNosotros .nosotrosTitulos h3 {
+        font-weight: 600;
+        font-size: 4.6vh;
+        grid-area: nuestro;
+        align-self: end;
+        animation-name: colorTexto;
+        animation-duration: 3s; }
+      .contenidoPrincipalNosotros .nosotrosTitulos h1 {
+        font-size: 9vh;
+        font-weight: 900;
+        grid-area: equipo;
+        align-self: start;
+        animation-name: colorTexto;
+        animation-duration: 3s; }
+    .contenidoPrincipalNosotros .cartaSoli {
+      display: none; }
+    .contenidoPrincipalNosotros .cartaBelu {
+      display: none; }
+    .contenidoPrincipalNosotros .cartaJl {
+      display: none; }
+    .contenidoPrincipalNosotros .cartaJj {
+      display: none; }
+    .contenidoPrincipalNosotros .popup {
+      display: none; } }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+nav {
+  grid-area: nav;
+  align-self: center;
+  justify-self: right;
+  margin-right: 1vw;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+  nav ul {
+    display: flex;
+    list-style: none; }
+    nav ul li {
+      transition: all 0.3s ease-in-out; }
+      nav ul li:hover {
+        transform: scale(1.03); }
+      nav ul li .active {
+        font-weight: 900; }
+      nav ul li a {
+        padding: 1.5vh;
+        font-size: 2.2vh;
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease-in-out; }
+        nav ul li a:hover {
+          opacity: 0.5; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  nav {
+    align-self: center;
+    justify-self: center;
+    margin-right: 0; }
+    nav ul {
+      display: flex;
+      list-style: none; }
+      nav ul li {
+        transition: all 0.3s ease-in-out; }
+        nav ul li .active {
+          font-weight: 900; }
+        nav ul li a {
+          padding: 14px;
+          font-size: 2.2vh;
+          text-decoration: none;
+          color: black;
+          transition: all 0.3s ease-in-out; }
+          nav ul li a:hover {
+            opacity: 0.5; }
+        nav ul li ul {
+          display: none;
+          list-style: none;
+          position: absolute; }
+          nav ul li ul li {
+            margin-top: 2vh;
+            justify-self: left; } }
+
+.contenedorProyectos {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  background-color: white;
+  animation-name: contenedorProyectos;
+  animation-duration: 3s; }
+
+.proyectosMobile {
+  display: none; }
+
+@keyframes contenedorProyectos {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorProyectos {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+    grid-template-rows: 8vh 4vh 160vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+nav {
+  grid-area: nav;
+  align-self: center;
+  justify-self: right;
+  margin-right: 1vw;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+  nav ul {
+    display: flex;
+    list-style: none; }
+    nav ul li {
+      transition: all 0.3s ease-in-out; }
+      nav ul li:hover {
+        transform: scale(1.03); }
+      nav ul li .active {
+        font-weight: 900; }
+      nav ul li a {
+        padding: 1.5vh;
+        font-size: 2.2vh;
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease-in-out; }
+        nav ul li a:hover {
+          opacity: 0.5; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  nav {
+    align-self: center;
+    justify-self: center;
+    margin-right: 0; }
+    nav ul {
+      display: flex;
+      list-style: none; }
+      nav ul li {
+        transition: all 0.3s ease-in-out; }
+        nav ul li .active {
+          font-weight: 900; }
+        nav ul li a {
+          padding: 14px;
+          font-size: 2.2vh;
+          text-decoration: none;
+          color: black;
+          transition: all 0.3s ease-in-out; }
+          nav ul li a:hover {
+            opacity: 0.5; }
+        nav ul li ul {
+          display: none;
+          list-style: none;
+          position: absolute; }
+          nav ul li ul li {
+            margin-top: 2vh;
+            justify-self: left; } }
+
+.contenedorProyectos {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  background-color: white;
+  animation-name: contenedorProyectos;
+  animation-duration: 3s; }
+
+.proyectosMobile {
+  display: none; }
+
+@keyframes contenedorProyectos {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorProyectos {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+    grid-template-rows: 8vh 4vh 160vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.contenidoPrincipalProyectos {
+  grid-area: ppal;
+  display: grid;
+  grid-template-areas: ". nuestros ." ". proyectos ." ". img .";
+  grid-template-rows: 5vh 8vh 72vh;
+  grid-template-columns: 12vw 76vw 12vw; }
+  .contenidoPrincipalProyectos h3 {
+    font-weight: 600;
+    grid-area: nuestros;
+    align-self: start;
+    animation-name: colorTexto;
+    animation-duration: 3s; }
+  .contenidoPrincipalProyectos h1 {
+    font-size: 7vh;
+    font-weight: 900;
+    grid-area: proyectos;
+    align-self: end;
+    animation-name: colorTexto;
+    animation-duration: 3s; }
+  .contenidoPrincipalProyectos .carousel {
+    height: 72vh;
+    grid-area: img;
+    animation-name: carousel;
+    animation-duration: 3s; }
+    .contenidoPrincipalProyectos .carousel div {
+      height: 100%; }
+      .contenidoPrincipalProyectos .carousel div img {
+        height: 100%; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenidoPrincipalProyectos {
+    grid-template-areas: ". texto1 ." ". texto2 ." ". proyectos .";
+    grid-template-rows: 5vh 5vh 150vh;
+    grid-template-columns: 10% 80% 10%; }
+    .contenidoPrincipalProyectos h3 {
+      grid-area: texto1; }
+    .contenidoPrincipalProyectos h1 {
+      grid-area: texto2;
+      font-size: 4.6vh; }
+    .contenidoPrincipalProyectos .proyectosMobile {
+      grid-area: proyectos;
+      display: grid;
+      grid-template-areas: "uno uno" "dos dos" "tres tres" "cuatro cuatro";
+      grid-template-columns: 50% 50%; }
+      .contenidoPrincipalProyectos .proyectosMobile .proyectoUnoMobile {
+        grid-area: uno;
+        width: 100%;
+        margin-top: 3vh; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoUnoMobile .imagenProyectoMobile img {
+          width: 100%; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoUnoMobile .textoProyectoMobile h5 {
+          margin-top: 2vh;
+          font-size: 2.5vh;
+          font-weight: 600; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoUnoMobile .textoProyectoMobile h6 {
+          font-size: 2.5vh;
+          font-weight: 600;
+          opacity: 0.5; }
+      .contenidoPrincipalProyectos .proyectosMobile .proyectoDosMobile {
+        grid-area: dos;
+        width: 100%;
+        margin-top: 3vh; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoDosMobile .imagenProyectoMobile img {
+          width: 100%; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoDosMobile .textoProyectoMobile h5 {
+          margin-top: 2vh;
+          font-size: 2.5vh;
+          font-weight: 600; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoDosMobile .textoProyectoMobile h6 {
+          font-size: 2.5vh;
+          font-weight: 600;
+          opacity: 0.5; }
+      .contenidoPrincipalProyectos .proyectosMobile .proyectoTresMobile {
+        grid-area: tres;
+        width: 100%;
+        margin-top: 3vh; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoTresMobile .imagenProyectoMobile img {
+          width: 100%; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoTresMobile .textoProyectoMobile h5 {
+          margin-top: 2vh;
+          font-size: 2.5vh;
+          font-weight: 600; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoTresMobile .textoProyectoMobile h6 {
+          font-size: 2.5vh;
+          font-weight: 600;
+          opacity: 0.5; }
+      .contenidoPrincipalProyectos .proyectosMobile .proyectoCuatroMobile {
+        grid-area: cuatro;
+        width: 100%;
+        margin-top: 3vh; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoCuatroMobile .imagenProyectoMobile img {
+          width: 100%; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoCuatroMobile .textoProyectoMobile h5 {
+          margin-top: 2vh;
+          font-size: 2.5vh;
+          font-weight: 600; }
+        .contenidoPrincipalProyectos .proyectosMobile .proyectoCuatroMobile .textoProyectoMobile h6 {
+          font-size: 2.5vh;
+          font-weight: 600;
+          opacity: 0.5; }
+    .contenidoPrincipalProyectos .carousel {
+      display: none; } }
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "logo nav" "ppal ppal" "pie pie";
+  grid-template-rows: 10vh 295vh 5vh;
+  grid-template-columns: 50% 50%;
+  animation-name: contenedor;
+  animation-duration: 3s; }
+
+@keyframes contenedor {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px) {
+  .contenedor {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+nav {
+  grid-area: nav;
+  align-self: center;
+  justify-self: right;
+  margin-right: 1vw;
+  animation-name: colorTexto;
+  animation-duration: 3s; }
+  nav ul {
+    display: flex;
+    list-style: none; }
+    nav ul li {
+      transition: all 0.3s ease-in-out; }
+      nav ul li:hover {
+        transform: scale(1.03); }
+      nav ul li .active {
+        font-weight: 900; }
+      nav ul li a {
+        padding: 1.5vh;
+        font-size: 2.2vh;
+        text-decoration: none;
+        color: black;
+        transition: all 0.3s ease-in-out; }
+        nav ul li a:hover {
+          opacity: 0.5; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  nav {
+    align-self: center;
+    justify-self: center;
+    margin-right: 0; }
+    nav ul {
+      display: flex;
+      list-style: none; }
+      nav ul li {
+        transition: all 0.3s ease-in-out; }
+        nav ul li .active {
+          font-weight: 900; }
+        nav ul li a {
+          padding: 14px;
+          font-size: 2.2vh;
+          text-decoration: none;
+          color: black;
+          transition: all 0.3s ease-in-out; }
+          nav ul li a:hover {
+            opacity: 0.5; }
+        nav ul li ul {
+          display: none;
+          list-style: none;
+          position: absolute; }
+          nav ul li ul li {
+            margin-top: 2vh;
+            justify-self: left; } }
+
+.contenedorProyectos {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  background-color: white;
+  animation-name: contenedorProyectos;
+  animation-duration: 3s; }
+
+.proyectosMobile {
+  display: none; }
+
+@keyframes contenedorProyectos {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorProyectos {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pieProy pieProy pieProy";
+    grid-template-rows: 8vh 4vh 160vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.piePaginaProyectos {
+  grid-area: pieProy; }
+  .piePaginaProyectos ul {
+    position: absolute;
+    display: block;
+    justify-self: left;
+    list-style: none;
+    margin-bottom: 20vh;
+    margin-left: 2vw;
+    transition: all 0.3s ease-in-out; }
+  .piePaginaProyectos li a svg {
+    transition: all 0.3s ease-in-out; }
+    .piePaginaProyectos li a svg:hover {
+      opacity: 0.8;
+      transform: scale(1.05); }
+  .piePaginaProyectos .copyrightProyectos {
+    position: absolute;
+    margin-bottom: 40vh;
+    font-size: 1.8vh;
+    color: black;
+    transform: rotate(-90deg); }
+    .piePaginaProyectos .copyrightProyectos strong {
+      font-weight: 600; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .piePaginaProyectos {
+    grid-area: pieProy; }
+    .piePaginaProyectos ul {
+      display: flex;
+      justify-self: left;
+      list-style: none;
+      margin-bottom: 0;
+      margin-left: 0; }
+    .piePaginaProyectos .copyrightProyectos {
+      margin-bottom: 0;
+      transform: rotate(0deg);
+      justify-self: right;
+      margin-right: 2vw; } }
+
+.contenedorContacto {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorProyectos;
+  animation-duration: 3s; }
+
+@keyframes contenedorProyectos {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorContacto {
+    grid-template-areas: ". logo ." "nav nav nav" ". ppal ." "pie pie pie";
+    grid-template-rows: 8vh 4vh 83vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.contenedorContacto {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorProyectos;
+  animation-duration: 3s; }
+
+@keyframes contenedorProyectos {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorContacto {
+    grid-template-areas: ". logo ." "nav nav nav" ". ppal ." "pie pie pie";
+    grid-template-rows: 8vh 4vh 83vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.contenidoPrincipalContacto {
+  grid-area: ppal;
+  display: grid;
+  grid-template-areas: "titulo titulo" ". cuadro" "boton .";
+  grid-template-rows: 5vh 70vh 10vh;
+  grid-template-columns: 60% 40%;
+  position: relative; }
+  .contenidoPrincipalContacto h2 {
+    grid-area: titulo;
+    font-size: 7vh;
+    font-weight: 900;
+    margin-top: 1px;
+    margin-left: 12vw; }
+  .contenidoPrincipalContacto .ubicacion {
+    grid-area: cuadro;
+    background-color: white;
+    height: 50vh;
+    width: 20vw;
+    padding: 2vw;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-areas: "ubicacion ubicacion" "direccion direccion" "cp cp" "email email" "contactate contactate" "telefono telefono" "llamar llamar";
+    grid-template-rows: 10vh 5vh 5vh 10vh 5vh 10vh 5vh;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; }
+    .contenidoPrincipalContacto .ubicacion .tituloUbicacion {
+      grid-area: ubicacion;
+      font-size: 3.2vh; }
+    .contenidoPrincipalContacto .ubicacion .tituloDireccion {
+      grid-area: direccion; }
+    .contenidoPrincipalContacto .ubicacion .tituloCp {
+      grid-area: cp; }
+    .contenidoPrincipalContacto .ubicacion .tituloEmail {
+      grid-area: email; }
+    .contenidoPrincipalContacto .ubicacion .tituloContactate {
+      grid-area: contactate; }
+    .contenidoPrincipalContacto .ubicacion .tituloTelefono {
+      grid-area: telefono;
+      font-size: 4.6vh;
+      align-self: start; }
+    .contenidoPrincipalContacto .ubicacion .tituloLlamar {
+      grid-area: llamar;
+      font-size: 3.2vh;
+      text-decoration: none;
+      color: black; }
+      .contenidoPrincipalContacto .ubicacion .tituloLlamar strong {
+        background-color: #FFC229;
+        padding: 1vh;
+        border-radius: 2px;
+        transition: all 0.3s ease-in-out; }
+        .contenidoPrincipalContacto .ubicacion .tituloLlamar strong:hover {
+          transform: scale(1.05);
+          opacity: 0.8; }
+  .contenidoPrincipalContacto .botonTexto {
+    position: absolute;
+    width: 5vw;
+    margin-left: 37vw;
+    margin-top: 30vh; }
+  .contenidoPrincipalContacto img {
+    width: 100%;
+    transition: all 0.3s ease-in-out; }
+    .contenidoPrincipalContacto img:hover {
+      transform: scale(1.15);
+      opacity: 0.8; }
+
+/*MEDIAQUERIES iPhone SE*/
+@media only screen and (min-width: 376px) and (max-width: 843px) {
+  .contenidoPrincipalContacto {
+    grid-template-areas: "titulo titulo" "cuadro cuadro";
+    grid-template-rows: 5vh 68vh;
+    grid-template-columns: 50% 50%;
+    /*Logo de WhatsApp*/ }
+    .contenidoPrincipalContacto h2 {
+      font-size: 4.6vh;
+      font-weight: 900;
+      justify-self: center;
+      margin-top: 2vh;
+      margin-left: 0; }
+    .contenidoPrincipalContacto .ubicacion {
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      padding: 3vw;
+      margin-top: 5vh; }
+      .contenidoPrincipalContacto .ubicacion .tituloTelefono {
+        font-size: 3.2vh; }
+    .contenidoPrincipalContacto .botonTexto {
+      display: none; }
+    .contenidoPrincipalContacto .logoWhatsapp {
+      position: fixed;
+      margin-left: 68vw;
+      margin-top: 58vh; }
+      .contenidoPrincipalContacto .logoWhatsapp img {
+        width: 100%; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 375px) {
+  .contenidoPrincipalContacto {
+    grid-template-areas: "titulo titulo" "cuadro cuadro";
+    grid-template-rows: 5vh 68vh;
+    grid-template-columns: 50% 50%;
+    /*Logo de WhatsApp*/ }
+    .contenidoPrincipalContacto h2 {
+      font-size: 4.6vh;
+      font-weight: 900;
+      justify-self: center;
+      margin-top: 2vh;
+      margin-left: 0; }
+    .contenidoPrincipalContacto .ubicacion {
+      align-self: center;
+      justify-self: center;
+      width: 100%;
+      padding: 3vw;
+      margin-top: 5vh; }
+      .contenidoPrincipalContacto .ubicacion .tituloTelefono {
+        font-size: 3.2vh; }
+    .contenidoPrincipalContacto .botonTexto {
+      display: none; }
+    .contenidoPrincipalContacto .logoWhatsapp {
+      position: fixed;
+      margin-left: 68vw;
+      margin-top: 58vh; }
+      .contenidoPrincipalContacto .logoWhatsapp img {
+        width: 100%; } }
+
+.contenedorEdificio {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorEdificio;
+  animation-duration: 3s; }
+
+@keyframes contenedorEdificio {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorEdificio {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 85vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.contenedorEdificio {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorEdificio;
+  animation-duration: 3s; }
+
+@keyframes contenedorEdificio {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorEdificio {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 85vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.contenidoPrincipalEdificio {
+  grid-area: ppal;
+  display: grid;
+  grid-template-areas: "titulo titulo" "cuadro ." "boton .";
+  grid-template-rows: 5vh 70vh 10vh;
+  grid-template-columns: 70% 30%; }
+  .contenidoPrincipalEdificio h1 {
+    font-size: 7vh;
+    font-weight: 900;
+    grid-area: titulo;
+    margin-top: 1px;
+    margin-left: 12vw; }
+  .contenidoPrincipalEdificio .ubicacion {
+    grid-area: cuadro;
+    background-color: white;
+    height: 50vh;
+    width: 20vw;
+    padding: 2vw;
+    margin-top: 10vh;
+    margin-left: 12vw;
+    display: grid;
+    grid-template-areas: "ubicacion ubicacion" "direccion direccion" "cliente cliente" "categoria categoria" "proyecto proyecto" "info info";
+    grid-template-rows: 15vh 5vh 5vh 5vh 15vh 5vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloUbicacion {
+      grid-area: ubicacion;
+      font-size: 3.2vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloDireccion {
+      grid-area: direccion;
+      font-size: 2.2vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloCliente {
+      grid-area: cliente;
+      font-size: 2.2vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloCategoria {
+      grid-area: categoria;
+      font-size: 2.2vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloProyecto {
+      grid-area: proyecto;
+      font-size: 2.2vh; }
+    .contenidoPrincipalEdificio .ubicacion .tituloInfo {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 1.5vh;
+      text-decoration: none;
+      font-size: 2.5vh;
+      color: black;
+      background-color: #FFC229;
+      border: solid 1px black;
+      align-self: center;
+      transition: all 0.3s ease-in-out; }
+      .contenidoPrincipalEdificio .ubicacion .tituloInfo:hover {
+        transform: scale(1.05);
+        border: solid 2px;
+        opacity: 0.8; }
+  .contenidoPrincipalEdificio .botonAtras {
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15vh;
+    background-color: transparent;
+    border: solid 1px black;
+    transition: all 0.3s ease-in-out; }
+    .contenidoPrincipalEdificio .botonAtras:hover {
+      transform: scale(1.05);
+      border: solid 2px;
+      opacity: 0.8;
+      background-color: #FFC229; }
+    .contenidoPrincipalEdificio .botonAtras a {
+      color: black;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 2vh; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenidoPrincipalEdificio {
+    grid-area: ppal;
+    display: grid;
+    grid-template-areas: ". titulo ." ". cuadro ." ". boton .";
+    grid-template-rows: 5vh 70vh 10vh;
+    grid-template-columns: 10% 80% 10%; }
+    .contenidoPrincipalEdificio h1 {
+      font-size: 4.6vh;
+      justify-self: center;
+      margin-top: 2vh;
+      margin-left: 0; }
+    .contenidoPrincipalEdificio .ubicacion {
+      grid-area: cuadro;
+      height: 45vh;
+      width: 100%;
+      justify-self: center;
+      align-self: center;
+      padding: 5vw;
+      margin-top: 0vh;
+      margin-left: 0;
+      grid-template-rows: 10vh 5vh 5vh 5vh 10vh 10vh; }
+    .contenidoPrincipalEdificio .botonAtras {
+      margin-top: 10vh;
+      margin-left: 5vw;
+      background-color: black; }
+      .contenidoPrincipalEdificio .botonAtras a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 2vh; } }
+
+.contenedorEdificio {
+  display: grid;
+  grid-template-areas: "logo . nav" "ppal ppal ppal" "pie pie pie";
+  grid-template-rows: 10vh 85vh 5vh;
+  grid-template-columns: 50% 25% 25%;
+  animation-name: contenedorEdificio;
+  animation-duration: 3s; }
+
+@keyframes contenedorEdificio {
+  0% {
+    opacity: 0.0; }
+  100% {
+    opacity: 1; } }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .contenedorEdificio {
+    grid-template-areas: ". logo ." "nav nav nav" "ppal ppal ppal" "pie pie pie";
+    grid-template-rows: 8vh 4vh 85vh 5vh;
+    grid-template-columns: 10% 80% 10%; } }
+
+.piePaginaEdificio {
+  grid-area: pie;
+  display: grid;
+  grid-template-areas: "rrss copy";
+  grid-template-columns: 20% 80%;
+  animation-name: colorTexto;
+  animation-duration: 5s; }
+  .piePaginaEdificio ul {
+    grid-area: rrss;
+    display: flex;
+    justify-self: right;
+    margin-right: 10vw;
+    list-style: none;
+    align-self: center;
+    transition: all 0.3s ease-in-out; }
+  .piePaginaEdificio li a svg {
+    transition: all 0.3s ease-in-out; }
+    .piePaginaEdificio li a svg:hover {
+      opacity: 0.8;
+      transform: scale(1.05); }
+  .piePaginaEdificio h2 {
+    grid-area: copy;
+    font-size: 2vh;
+    font-weight: 300;
+    align-self: center;
+    color: black; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  .piePaginaEdificio {
+    grid-template-columns: 30% 70%; }
+    .piePaginaEdificio ul {
+      justify-self: center;
+      margin-right: 0; }
+    .piePaginaEdificio h2 {
+      text-align: center; } }
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Lato", sans-serif; }
+
+/*INDEX*/
+/*Imagen principal*/
+.imagenPrincipal {
+  position: absolute;
+  width: 100%; }
+  .imagenPrincipal img {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    animation-name: contenedor;
+    animation-duration: 4s; }
+
+/*Esconder imagen de mobile*/
+.imagenPrincipalMobile {
+  display: none; }
+
+/*CONTACTO*/
+/*Imagen principal*/
+.imagenPrincipalContacto {
+  position: absolute;
+  width: 100%;
+  margin-top: 18vh; }
+  .imagenPrincipalContacto img {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    opacity: 0.8;
+    animation-name: contenedor;
+    animation-duration: 4s; }
+
+/*EDIFICIO A1*/
+/*Imagen principal*/
+.imagenPrincipalEdificio {
+  position: absolute;
+  width: 100%;
+  margin-top: 17vh; }
+  .imagenPrincipalEdificio img {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    animation-name: contenedor;
+    animation-duration: 4s; }
+
+.imagenPrincipalEdificioMobile {
+  display: none; }
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px) {
+  /*INDEX*/
+  /*Imagen principal mobile*/
+  .imagenPrincipal {
+    display: none; }
+  .imagenPrincipalMobile {
+    margin-top: 12vh;
+    display: block;
+    position: absolute;
+    width: 100vw; }
+    .imagenPrincipalMobile img {
+      position: absolute;
+      z-index: -1;
+      max-width: 100%;
+      animation-name: contenedor;
+      animation-duration: 4s; }
+  .imagenPrincipalContacto {
+    display: none; }
+  .imagenPrincipalEdificio {
+    display: none; }
+  .imagenPrincipalEdificioMobile {
+    margin-top: 12vh;
+    display: block;
+    position: absolute;
+    width: 100vw; }
+    .imagenPrincipalEdificioMobile img {
+      position: absolute;
+      z-index: -1;
+      max-width: 100%;
+      animation-name: contenedor;
+      animation-duration: 4s; } }

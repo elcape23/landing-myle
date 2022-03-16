@@ -1,0 +1,118 @@
+@import "base/variables";
+@import "base/lista";
+@import "index/contenedor";
+@import "index/header";
+@import "index/navegador";
+@import "index/main";
+@import "index/footer";
+@import "nosotros/contenedor-nosotros";
+@import "nosotros/main-nosotros";
+@import "proyectos/contenedor-proyectos";
+@import "proyectos/main-proyectos";
+@import "proyectos/footer-proyectos";
+@import "contacto/contenedor-contacto";
+@import "contacto/main-contacto";
+@import "edificio a1/contenedor-edificio";
+@import "edificio a1/main-edificio";
+@import "edificio a1/footer-edificio";
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: $fuente-principal;
+}
+
+/*INDEX*/
+/*Imagen principal*/
+.imagenPrincipal{
+    position: absolute;
+    width: 100%;
+    img{
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        animation-name: contenedor;
+        animation-duration: 4s;
+    }
+}
+
+/*Esconder imagen de mobile*/
+.imagenPrincipalMobile{
+    display: none;
+}
+
+/*CONTACTO*/
+/*Imagen principal*/
+.imagenPrincipalContacto{
+    position: absolute;
+    width: 100%;
+    margin-top: 18vh;
+    img{
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        opacity: 0.8;
+        animation-name: contenedor;
+        animation-duration: 4s;
+    }
+}
+
+/*EDIFICIO A1*/
+/*Imagen principal*/
+.imagenPrincipalEdificio{
+    position: absolute;
+    width: 100%;
+    margin-top: 17vh;
+    img{
+        position: absolute;
+        z-index: -1;
+        max-width: 100%;
+        animation-name: contenedor;
+        animation-duration: 4s;
+    }
+}
+
+.imagenPrincipalEdificioMobile{
+    display: none;
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 843px){
+/*INDEX*/
+/*Imagen principal mobile*/
+    .imagenPrincipal{
+        display: none;
+    }
+    .imagenPrincipalMobile{
+        margin-top: 12vh;
+        display: block;
+        position: absolute;
+        width: 100vw;
+        img{
+            position: absolute;
+            z-index: -1;
+            max-width: 100%;
+            animation-name: contenedor;
+            animation-duration: 4s;
+        }
+    }
+    .imagenPrincipalContacto{
+        display: none;
+    }
+    .imagenPrincipalEdificio{
+        display: none;
+    }
+    .imagenPrincipalEdificioMobile{
+        margin-top: 12vh;
+        display: block;
+        position: absolute;
+        width: 100vw;
+        img{
+            position: absolute;
+            z-index: -1;
+            max-width: 100%;
+            animation-name: contenedor;
+            animation-duration: 4s;
+        }
+    }
+}

@@ -1,0 +1,44 @@
+.contenedor{
+    display: grid;
+    grid-template-areas: "logo nav"
+                         "ppal ppal"
+                         "pie pie";
+    grid-template-rows: 10vh 295vh 5vh;
+    grid-template-columns: 50% 50%;
+    animation-name: contenedor;
+    animation-duration: $duracion-por-defecto;    
+}
+
+@keyframes contenedor{
+    0%{
+        opacity: 0.0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 360px) and (max-width: 576px){
+    .contenedor{
+        grid-template-areas: ". logo ."
+                             "nav nav nav"
+                             "ppal ppal ppal"
+                             "pie pie pie";
+    grid-template-rows: 8vh 4vh 345vh 5vh;
+    grid-template-columns: 10% 80% 10%;
+    }
+}
+
+/*MEDIAQUERIES*/
+@media only screen and (min-width: 577px) and (max-width: 820px){
+    .contenedor{
+        grid-template-areas: ". logo ."
+                             "nav nav nav"
+                             "ppal ppal ppal"
+                             "pie pie pie";
+    grid-template-rows: 8vh 4vh 375vh 5vh;
+    grid-template-columns: 10% 80% 10%;
+    }
+}
